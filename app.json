@@ -17,7 +17,8 @@
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.anonymous.doctorapp"
     },
     "web": {
       "output": "static",
@@ -31,6 +32,15 @@
           "backgroundColor": "#208AEF",
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 76
+        }
+      ],
+      "expo-sqlite",
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to use the camera to photograph patient case studies and your profile photo.",
+          "photosPermission": "Allow $(PRODUCT_NAME) to attach case study photos and your profile photo from your library.",
+          "microphonePermission": false
         }
       ]
     ],
